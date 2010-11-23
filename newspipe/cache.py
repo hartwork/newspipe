@@ -36,11 +36,7 @@ except ImportError:
 import socket
 socket.setdefaulttimeout (60)
 
-try:
-    from feedparser import parse
-    _has_feedparser = True
-except ImportError:
-    _has_feedparser = False
+from feedparser import parse
 
 def touchFile (x):
     os.utime (x, None)
@@ -309,10 +305,6 @@ class Cache:
     # end def    
 
     def feed_parse(self, url, can_pipe=False, username=None, password=None):
-        if not _has_feedparser:
-            import feedparser
-        # end if
-
         resource = self.urlopen(url, can_pipe=can_pipe, username=username, password=password)
         if resource:
             result = parse (resource.content)
