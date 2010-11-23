@@ -1,9 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: UTF-8 -*-
 
-# $NoKeywords: $   for Visual Sourcesafe, stop replacing tags
-__revision__ = "$Revision: 1.5 $"
-__revision_number__ = __revision__.split()[1]
+# Copyright (C) 2004-2005 Ricardo M. Reyes <reyesric@ufasta.edu.ar>
+#
+# Licensed under GPL v2 or later
+
 __url__ = "https://newspipe.sourceforge.net"
 __author__ = "Ricardo M. Reyes <reyesric@ufasta.edu.ar>"
 __id__ = "$Id: opml.py,v 1.5 2004/12/14 02:22:07 reyesric Exp $"

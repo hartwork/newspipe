@@ -1,9 +1,11 @@
 #!/usr/bin/env python
 # -*- coding: UTF-8 -*-
 
-# $NoKeywords: $   for Visual Sourcesafe, stop replacing tags
-__revision__ = "$Revision: 1.7 $"
-__revision_number__ = __revision__.split()[1]
+# Copyright (C) 2004-2005 Ricardo M. Reyes <reyesric@ufasta.edu.ar>
+# Copyright (C) 2010 Sebastian Pipping <sebastian@pipping.org>
+#
+# Licensed under GPL v2 or later
+
 __url__ = "https://newspipe.sourceforge.net"
 __author__ = "Ricardo M. Reyes <reyesric@ufasta.edu.ar>"
 __id__ = "$Id: cache.py,v 1.7 2004/11/21 23:00:48 reyesric Exp $"
@@ -98,7 +100,7 @@ class Cache:
         if agent:
             self.agent = agent
         else:
-            self.agent = 'cache lib (rev. '+__revision_number__+')'
+            self.agent = 'cache lib'
         # end if
 
     def checksum(self, texto):

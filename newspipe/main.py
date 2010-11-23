@@ -1,19 +1,23 @@
 #!/usr/bin/env python
 # -*- coding: UTF-8 -*-
 
-# $NoKeywords: $   for Visual Sourcesafe, stop replacing tags
-__revision__ = "$Revision: 1.66 $"
-__revision_number__ = __revision__.split()[1]
-__version__ = "1.1.9"
-__date__ = "2005-07-17"
+# Copyright (C) 2004-2005 Ricardo M. Reyes <reyesric@ufasta.edu.ar>
+# Copyright (C) Rui Carmo <http://the.taoofmac.com/space/>
+# Copyright (C) Bruno Rodrigues <http://www.litux.org/blog/>
+# Copyright (C) 2010 Sebastian Pipping <sebastian@pipping.org>
+#
+# Licensed under GPL v2 or later
+
+__version__ = "1.2.0"
+__date__ = "2010-11-23"
 __url__ = "http://newspipe.sourceforge.net"
 __author__ = "Ricardo M. Reyes <reyesric@ufasta.edu.ar>"
 __contributors__ = ["Rui Carmo <http://the.taoofmac.com/space/>", "Bruno Rodrigues <http://www.litux.org/blog/>"]
 __id__ = "$Id: newspipe.py,v 1.66 2005/07/18 00:23:28 reyesric Exp $"
 
 ABOUT_NEWSPIPE = """
-newspipe.py - version %s revision %s, Copyright (C) 2003-%s \n%s
-"""%(__version__, __revision_number__, __date__.split('-')[0], __author__) 
+newspipe.py - version %s, Copyright (C) 2003-%s \n%s
+"""%(__version__, __date__.split('-')[0], __author__)
 
 #import psyco
 #psyco.full()
@@ -64,7 +68,7 @@ except ImportError:
     has_html2text = False
 
 PYTHON_VERSION = '.'.join([str(x) for x in sys.version_info])
-USER_AGENT = 'NewsPipe/'+__version__+' rev.'+__revision_number__+' Python: '+ PYTHON_VERSION+' Platform: '+sys.platform +' / '+__url__
+USER_AGENT = 'NewsPipe/'+__version__+' Python: '+ PYTHON_VERSION+' Platform: '+sys.platform +' / '+__url__
 
 OPML_DEFAULTS = {
     'active': '1',
