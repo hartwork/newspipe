@@ -1690,7 +1690,11 @@ def MainLoop():
     historico_feeds, historico_posts = None, None
 
     while True:
-        config = LeerConfig()
+        try:
+            config = LeerConfig()
+        except ValueError, e:
+            print str(e)
+            sys.exit(1)
 
         DEBUG = config['debug'] == '1'
     
