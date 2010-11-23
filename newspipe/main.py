@@ -22,10 +22,10 @@ import ConfigParser
 import md5
 from time import sleep, time
 import os, sys, os.path
-from cache import *
+from newspipe.cache import *
 from datetime import datetime, timedelta
 from pprint import pprint
-from opml import *
+from newspipe.opml import *
 from pickle import load, dump
 import smtplib
 import re
@@ -59,7 +59,7 @@ except ImportError:
 
 has_html2text = True
 try:
-    from html2text import *
+    from newspipe.html2text import *
 except ImportError:
     has_html2text = False
 
