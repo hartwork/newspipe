@@ -1162,6 +1162,7 @@ def EnviarEmails(msgs, method, server, auth, auth_user, auth_pass, procmail, rev
         
         if method.lower() in ('smtp', 'both'):
             smtp = smtplib.SMTP(server)
+            smtp.starttls()
             # authenticate with SMTP server when there's need to
             if auth:
                 smtp.login(auth_user,auth_pass);
@@ -1195,6 +1196,7 @@ def EnviarEmails(msgs, method, server, auth, auth_user, auth_pass, procmail, rev
                     # close the connection and reconnect every 10 messages
                     smtp.quit()
                     smtp = smtplib.SMTP(server)
+                    smtp.starttls()
                     # authenticate with SMTP server when there's need to
                     if auth:
                         smtp.login(auth_user,auth_pass);
