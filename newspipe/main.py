@@ -1113,12 +1113,14 @@ def LeerConfig():
     if options.inifile:
         inifile = options.inifile
     else:
-        source_path = os.path.split(sys.argv[0])[0]
-    
-        for p in ('.', source_path):
-            inifile = os.path.join(p, 'newspipe.ini')
-            if os.path.exists(inifile):
-                break
+        import inspect
+        self_dir = os.path.dirname(inspect.getfile(sys._getframe(0)))
+        if os.path.exists(os.path.join(self_dir, '..', 'manual.html')):
+            # Allow running from source dir
+            inifile = os.path.normpath(os.path.join(self_dir, '..', 'newspipe.ini'))
+        else:
+            inifile = '/etc/newspipe.ini'
+
 
     if not os.path.exists(inifile):
         raise ValueError ("Can't find the ini file at "+inifile)
