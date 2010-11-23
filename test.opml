@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<opml version="1.1">
+	<head>
+		<title>test.opml</title>
+		<ownerName>Your name goes here</ownerName>
+		<ownerEmail>your.name@example.com</ownerEmail>
+		</head>
+	<body>
+		<outline text="General">
+			<outline text="dive into mark" description="A lot of effort went into making this effortless." htmlUrl="http://diveintomark.org" xmlUrl="http://diveintomark.org/xml/atom.xml" />
+			<outline text="The Tao of Mac" description="mac.against.org" htmlUrl="http://the.taoofmac.com" xmlUrl="http://the.taoofmac.com/space/RecentChanges?format=rss" />
+			</outline>
+		<outline text="1 Email per feed" digest="1">
+			<outline text="The Scobleizer Weblog" description="Human Aggregator of geek life" htmlUrl="http://radio.weblogs.com" xmlUrl="http://radio.weblogs.com/0001011/rss.xml" />
+			<outline text="Boing Boing Blog" description="The Blog of Wonderful things" htmlUrl="http://boingboing.net" xmlUrl="http://boingboing.net/rss.xml" />
+			<outline text="1 email per feed, but without titles" titles="0">
+				<outline text="Scripting News" description="All scripting, all the time, forever." htmlUrl="http://www.scripting.com" xmlUrl="http://www.scripting.com/rss.xml" />
+			</outline>
+		</outline>
+		<outline text="Download the linked page" download_link="1">
+			<outline text="ongoing" description="Ongoing fragmented essay by Tim Bray." htmlUrl="http://www.tbray.org/ongoing/" xmlUrl="http://www.tbray.org/ongoing/ongoing.rss" />
+		</outline>
+		<outline text="Plain text emails" textonly="1">
+			<outline text="Wired News" description="Wired News" htmlUrl="http://www.wired.com" xmlUrl="http://www.wired.com/news/feeds/rss2/0,2610,,00.xml" />
+		</outline>
+	</body>
+</opml>

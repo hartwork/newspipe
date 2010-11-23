@@ -1,0 +1,6 @@
+[NewsPipe]
+log_console=1
+smtp_server=127.0.0.1
+opml=test.opml
+sleep_time=5
+check_online=http://www.google.com
