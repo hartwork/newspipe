@@ -1866,7 +1866,8 @@ def MainLoop():
 
 
 
-if __name__ == '__main__':
+def main():
+    global mylog, cache
     print ABOUT_NEWSPIPE
 
     log = None

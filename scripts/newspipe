@@ -1,0 +1,17 @@
+#! /usr/bin/env python
+# Copyright (C) Sebastian Pipping <sebastian@pipping.org>
+# Licensed under GPL v2 or later
+
+def add_module_path():
+    import inspect
+    import os
+    import sys
+    self_dir = os.path.dirname(inspect.getfile(sys._getframe(0)))
+    if os.path.exists(os.path.join(self_dir, '..', 'manual.html')):
+        # Allow running from source dir
+        sys.path.insert(0, os.path.join(self_dir, '..'))
+
+add_module_path()
+
+from newspipe.main import main
+main()
